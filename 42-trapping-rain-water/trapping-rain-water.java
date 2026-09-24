@@ -10,16 +10,16 @@ class Solution {
                 if(height[left]>leftmax)
                 leftmax=height[left];
                 else{
-                    count+=leftmax-height[left];
-                    left++;
+                    count+=leftmax-height[left]; 
                 }
+                left++;
             }
             else{
                 if(height[right]>rightmax) rightmax=height[right];
                 else{ 
                     count+=rightmax-height[right];
-                    right--;
                 }
+                right--;
             }
         }
         return count;
